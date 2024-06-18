@@ -105,143 +105,229 @@ const Form = () => {
   return (
     <div>
       <Header />
-      <div className="form-container">
-        <form>
-          <div className="input-div">
-            <label>Email:</label>
-            <input type="email" id="email"/>
-          </div>
-          <div className="input-div">
-            <label>FullName:</label>
-            <input type="text" id="fullName"/>
-          </div>
-          <div className="input-div">
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="Male"/>
-            <label htmlFor="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female"/>
-            <label htmlFor="female">Female</label>
-          </div>
-          <div className="input-div">
-            <label>Birth Date:</label>
-            <input type="date" id="birthDate"/>
-          </div>
-          <div className="input-div">
-            <label>Birth Time:</label>
-            <input type="time" id="birthTime"/>
-          </div>
-          <div className="input-div">
-            <label>Birth Place:</label>
-            <input type="text" id="birthPlace"/>
-          </div>
-          <div className="input-div">
-            <label>Height:</label>
-            <input type="text" id="height"/>
-          </div>
-          <div className="input-div">
-            <label>Weight:</label>
-            <input type="text" id="weight"/>
-          </div>
-          <div className="input-div">
-            <label>Interests:</label>
-            <input type="text" id="interests"/>
-          </div>
-          <div className="input-div">
-            <label>Current Marital Status:</label>
-            <input type="radio" id="neverMarried" name="currentMaritalStatus" value="Never Married"/>
-            <label htmlFor="neverMarried">Never Married</label>
-            <input type="radio" id="divorced" name="currentMaritalStatus" value="Divorced"/>
-            <label htmlFor="divorced">Divorced</label>
-          </div>
-          <div className="input-div">
-            <label>Current Address Of Candidate:</label>
-            <textarea id="currentAddressOfCandidate"/>
-          </div>
-          <div className="input-div">
-            <label>Current Address Of Family:</label>
-            <textarea id="currentAddressOfFamily"/>
-          </div>
-          <div className="input-div">
-            <label>Contact Number:</label>
-            <input type="text" id="contactNumber"/>
-          </div>
-          <div className="input-div">
-            <label>Immigration Status Of Candidate:</label>
-            <input type="radio" id="studentVisa" name="immigrationStatusOfCandidate" value="Student Visa"/>
-            <label htmlFor="studentVisa">Student Visa</label>
-            <input type="radio" id="workVisa" name="immigrationStatusOfCandidate" value="Work Visa"/>
-            <label htmlFor="workVisa">Work Visa</label>
-            <input type="radio" id="permanentResident" name="immigrationStatusOfCandidate" value="Permanent Resident"/>
-            <label htmlFor="permanentResident">Permanent Resident</label>
-            <input type="radio" id="Citizen" name="immigrationStatusOfCandidate" value="Citizen"/>
-            <label htmlFor="Citizen">Citizen</label>
-          </div>
-          <div className="input-div">
-            <label>Highest Education Of Candidate:</label>
-            <input type="text" id="highestEducationOfCandidate"/>
-          </div>
-          <div className="input-div">
-            <label>Professional Details Of Candidate:</label>
-            <input type="text" id="professionalDetailsOfCandidate"/>
-          </div>
-          <div className="input-div">
-            <label>Father Full Name:</label>
-            <input type="text" id="fatherFullName"/>
-          </div>
-          <div className="input-div">
-            <label>Father Contact Number:</label>
-            <input type="text" id="fatherContactNumber"/>
-          </div>
-          <div className="input-div">
-            <label>Mother Full Name:</label>
-            <input type="text" id="motherFullName"/>
-          </div>
-          <div className="input-div">
-            <label>Father Native Town:</label>
-            <input type="text" id="fatherNativeTown"/>
-          </div>
-          <div className="input-div">
-            <label>Mother Native Town:</label>
-            <input type="text" id="motherNativeTown"/>
-          </div>
-          <div className="input-div">
-            <label>Details Of Siblings:</label>
-            <input type="text" id="detailsOfSiblings"/>
-          </div>
-          <div className="input-div">
-            <label>Maternal Uncle Name:</label>
-            <input type="text" id="maternalUncleName"/>
-          </div>
-          <div className="input-div">
-            <label>Details Of Mosal:</label>
-            <input type="text" id="detailsOfMosal"/>
-          </div>
-          <div className="input-div">
-            <label>Believe In Kundli:</label>
-            <input type="radio" id="html" name="believeInKundli" value="Yes"/>
-            <label htmlFor="Yes">Yes</label>
-            <input type="radio" id="css" name="believeInKundli" value="No"/>
-            <label htmlFor="No">No</label>
-          </div>
-          <div className="input-div">
-            <label>Expectation From Life Partner:</label>
-            <textarea id="expectationFromLifePartner"/>
-          </div>
-          <div className="input-div">
-            <label>I do hereby acknowledge that all the details provided above is correct and I willfully wish to
-              share my details in above form.</label><br/>
-            <input type="radio" id="yes" name="correctInformation" value="Yes"/>
-            <label htmlFor="yes">Yes</label>
-            <input type="radio" id="no" name="correctInformation" value="No"/>
-            <label htmlFor="no">No</label>
+
+
+      <div className="form-container p-l-55 p-r-55 p-t-65 p-b-54">
+        <form class="login100-form validate-form">
+
+          <span className="login100-form-title p-b-49"> Metrimonial Registration </span>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Email is reauired">
+            <span className="label-input100">Email</span>
+            <input className="input100" type="email" id="email" placeholder="Type your email"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
           </div>
 
-          <button onClick={(e) => submitForm(e)}>Submit</button>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="FullName is reauired">
+            <span className="label-input100">Full Name</span>
+            <input className="input100" type="text" id="fullName" placeholder="Type your FullName"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100-wb validate-input m-b-23" data-validate="Gender is reauired">
+            <span className="label-input100">Gender</span>
+            <input type="radio" id="male" name="gender" value="Male"/>
+            <label className="txt1" htmlFor="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female"/>
+            <label className="txt1" htmlFor="female">Female</label>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="BirthDate is reauired">
+            <span className="label-input100">BirthDate</span>
+            <input className="input100" type="date" id="birthDate" placeholder="birthDate"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="BirthTime is reauired">
+            <span className="label-input100">Birth Time</span>
+            <input className="input100" type="time" id="birthTime" placeholder="birthTime"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="BirthPlace is reauired">
+            <span className="label-input100">Birth Place</span>
+            <input className="input100" type="text" id="birthPlace" placeholder="Enter Birth Place"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Height is reauired">
+            <span className="label-input100">Height</span>
+            <input className="input100" type="text" id="height" placeholder="Enter Height"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Weight is reauired">
+            <span className="label-input100">Weight</span>
+            <input className="input100" type="text" id="weight" placeholder="Enter weight"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Interests is reauired">
+            <span className="label-input100">Interests</span>
+            <input className="input100" type="text" id="interests"
+                   placeholder="Enter interests(like Music, Cooking..)"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+
+          <div className="wrap-input100-wb validate-input m-b-23" data-validate="Current Marital Status is reauired">
+            <span className="label-input100">Current Marital Status</span>
+            <input type="radio" id="neverMarried" name="currentMaritalStatus" value="Never Married"/>
+            <label className="txt1" htmlFor="neverMarried">Never Married</label>
+            <input type="radio" id="divorced" name="currentMaritalStatus" value="Divorced"/>
+            <label className="txt1" htmlFor="divorced">Divorced</label>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Current Address Of Candidate is reauired">
+            <span className="label-input100">Current Address Of Candidate</span>
+            <input className="input100" type="text" id="currentAddressOfCandidate"
+                   placeholder="Enter Candidate's current address"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Current Address Of Family is reauired">
+            <span className="label-input100">Current Address Of Family</span>
+            <input className="input100" type="text" id="currentAddressOfFamily"
+                   placeholder="Enter Family's current address"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23" data-validate="Contact Number is reauired">
+            <span className="label-input100">Contact Number</span>
+            <input className="input100" type="text" id="contactNumber"
+                   placeholder="Enter Contact Number"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100-wb validate-input m-b-23" data-validate="Immigration Status Of Candidate is reauired">
+            <span className="label-input100">Immigration Status Of Candidate</span>
+            <input type="radio" id="studentVisa" name="immigrationStatusOfCandidate" value="Student Visa"/>
+            <label className="txt1" htmlFor="studentVisa">Student Visa</label>
+            <input type="radio" id="workVisa" name="immigrationStatusOfCandidate" value="Work Visa"/>
+            <label className="txt1" htmlFor="workVisa">Work Visa</label>
+            <input type="radio" id="permanentResident" name="immigrationStatusOfCandidate"
+                   value="Permanent Resident"/>
+            <label className="txt1" htmlFor="permanentResident">Permanent Resident</label>
+            <input type="radio" id="Citizen" name="immigrationStatusOfCandidate" value="Citizen"/>
+            <label className="txt1" htmlFor="Citizen">Citizen</label>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Highest Education Of Candidate is reauired">
+            <span className="label-input100">Candidate's Highest Education</span>
+            <input className="input100" type="text" id="highestEducationOfCandidate"
+                   placeholder="Enter Highest Education Of Candidate"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Highest Education Of Candidate is reauired">
+            <span className="label-input100">Candidate's Professional Details</span>
+            <input className="input100" type="text" id="professionalDetailsOfCandidate"
+                   placeholder="Enter Professional Details Of Candidate"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Father FullName is reauired">
+            <span className="label-input100">Father FullName</span>
+            <input className="input100" type="text" id="fatherFullName"
+                   placeholder="Enter FullName Of Father"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Father's Contact Number is reauired">
+            <span className="label-input100">Father Contact Number</span>
+            <input className="input100" type="text" id="fatherContactNumber"
+                   placeholder="Enter Father's Contact Number"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Mother FullName is reauired">
+            <span className="label-input100">Mother FullName</span>
+            <input className="input100" type="text" id="motherFullName"
+                   placeholder="Enter FullName Of Mother"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Father's Native Town is reauired">
+            <span className="label-input100">Father Native Town</span>
+            <input className="input100" type="text" id="fatherNativeTown"
+                   placeholder="Enter NativeTown Of Father"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Mother's Native Town is reauired">
+            <span className="label-input100">Mother Native Town</span>
+            <input className="input100" type="text" id="motherNativeTown"
+                   placeholder="Enter NativeTown Of Mother"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Details Of Siblings is reauired">
+            <span className="label-input100">Details Of Siblings</span>
+            <input className="input100" type="text" id="detailsOfSiblings"
+                   placeholder="Enter Details Of Siblings"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Maternal Uncle Name is reauired">
+            <span className="label-input100">Maternal Uncle Name</span>
+            <input className="input100" type="text" id="maternalUncleName"
+                   placeholder="Enter Maternal UncleName"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+
+          <div className="wrap-input100 validate-input m-b-23"
+               data-validate="Details Of Mosal is reauired">
+            <span className="label-input100">Details Of Mosal</span>
+            <input className="input100" type="text" id="detailsOfMosal"
+                   placeholder="Enter Details Of Mosal"/>
+            <span className="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+
+          <div className="wrap-input100-wb validate-input m-b-23" data-validate="Believe In Kundli is reauired">
+            <span className="label-input100">Believe In Kundli</span>
+              <input type="radio" id="html" name="believeInKundli" value="Yes"/>
+              <label className="txt1" htmlFor="Yes">Yes</label>
+              <input type="radio" id="css" name="believeInKundli" value="No"/>
+              <label className="txt1" htmlFor="No">No</label>
+            </div>
+
+
+            <div className="wrap-input100 validate-input m-b-23"
+                 data-validate="Expectation from LifePartner is reauired">
+              <span className="label-input100">Expectation From Life Partner</span>
+              <input className="input100" type="text" id="expectationFromLifePartner"
+                     placeholder="Enter Expectation From Life Partner"/>
+              <span className="focus-input100" data-symbol="&#xf206;"></span>
+            </div>
+
+            <div className="input-div">
+              <label>I do hereby acknowledge that all the details provided above is correct and I willfully wish to
+                share my details in above form.</label><br/>
+              <input type="radio" id="yes" name="correctInformation" value="Yes"/>
+              <label className="txt1" htmlFor="yes">Yes</label>
+              <input type="radio" id="no" name="correctInformation" value="No"/>
+              <label className="txt1" htmlFor="no">No</label>
+            </div>
+
+            <button onClick={(e) => submitForm(e)}>Submit</button>
         </form>
       </div>
       <Footer/>
     </div>
-  );
+);
 };
 
 export default Form;

@@ -2,6 +2,10 @@ import React from 'react'
 import Logo from "../img/Logo_Banner.png"
 import { Link } from 'react-router-dom'
 import "../css/site.css"
+import "../css/main.css"
+import "../css/util.css"
+import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+import "../fonts/iconic/css/material-design-iconic-font.min.css"
 
 const Header = () => {
   return (
