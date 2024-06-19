@@ -110,7 +110,7 @@ const Form = () => {
       <div className="form-container p-l-55 p-r-55 p-t-65 p-b-54">
         <form class="login100-form validate-form">
 
-          <span className="login100-form-title p-b-49"> Metrimonial Registration </span>
+          <span className="login100-form-title p-b-49">Matrimonial Registration </span>
 
           <div className="wrap-input100 validate-input m-b-23" data-validate="Email is reauired">
             <span className="label-input100">Email</span>
